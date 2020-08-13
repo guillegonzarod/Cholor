@@ -1,24 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="olivier_demo.ttf">
+            <string>olivier</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Inicio View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InicioViewController" customModule="Cholor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo Pantalla Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-Dm-3ei">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-fZ-moF">
+                                <rect key="frame" x="94" y="203" width="133" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Boton Jugar Normal"/>
+                                <state key="highlighted" image="Boton Jugar Pulsado"/>
+                                <connections>
+                                    <segue destination="uHl-UQ-UAQ" kind="presentation" identifier="IrJuego" modalTransitionStyle="flipHorizontal" id="jKY-VG-0T7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="60" y="26.25"/>
+        </scene>
+        <!--Juego View Controller-->
+        <scene sceneID="cAr-gK-LOm">
+            <objects>
+                <viewController id="uHl-UQ-UAQ" customClass="JuegoViewController" customModule="Cholor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wiZ-aU-ZoJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo Pantalla Juego" translatesAutoresizingMaskIntoConstraints="NO" id="j2d-EA-FSe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" name="Azul Fondo"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gek-u8-zGQ">
+                                <rect key="frame" x="0.0" y="30" width="320" height="70"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TyP-Tv-c8i">
+                                        <rect key="frame" x="213.5" y="0.0" width="106.5" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-6g-Ja7">
+                                                <rect key="frame" x="31" y="13" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Qze-6g-Ja7" secondAttribute="height" multiplier="1:1" id="Qxp-zL-0Wc"/>
+                                                    <constraint firstAttribute="width" constant="44" id="YLM-Vh-7De"/>
+                                                </constraints>
+                                                <state key="normal" image="Boton Listado Bolas"/>
+                                                <connections>
+                                                    <segue destination="PAR-fP-r86" kind="presentation" identifier="IrListado" id="YfR-Zv-NSa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Qze-6g-Ja7" firstAttribute="centerX" secondItem="TyP-Tv-c8i" secondAttribute="centerX" id="chY-FC-yhB"/>
+                                            <constraint firstItem="Qze-6g-Ja7" firstAttribute="centerY" secondItem="TyP-Tv-c8i" secondAttribute="centerY" id="u6D-Cb-zDE"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-fG-Kop">
+                                        <rect key="frame" x="20" y="0.0" width="193.5" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-sI-mxM">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="70"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oem-JP-fSI" userLabel="Puntuacion">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="28"/>
+                                                        <fontDescription key="fontDescription" name="olivier" family="olivier" pointSize="28"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="237" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUc-IU-QQN">
+                                                        <rect key="frame" x="36" y="42" width="43" height="28"/>
+                                                        <fontDescription key="fontDescription" name="olivier" family="olivier" pointSize="28"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2J-ry-gwn">
+                                                <rect key="frame" x="125" y="0.0" width="1" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="tcQ-21-l5z"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="cdR-cV-nzR">
+                                                <rect key="frame" x="136" y="0.0" width="46.5" height="70"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nivel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gez-V1-UfM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="28"/>
+                                                        <fontDescription key="fontDescription" name="olivier" family="olivier" pointSize="28"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXu-l7-M4d">
+                                                        <rect key="frame" x="0.0" y="49" width="46.5" height="21"/>
+                                                        <fontDescription key="fontDescription" name="olivier" family="olivier" pointSize="28"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFR-wu-WTp">
+                                                <rect key="frame" x="192.5" y="0.0" width="1" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aFR-wu-WTp" firstAttribute="centerY" secondItem="H2J-ry-gwn" secondAttribute="centerY" id="Y6u-jg-I03"/>
+                                            <constraint firstItem="aFR-wu-WTp" firstAttribute="width" secondItem="H2J-ry-gwn" secondAttribute="width" id="aGa-3F-qEO"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Blanco Transparente"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0cQ-xV-8gS"/>
+                                    <constraint firstAttribute="bottom" secondItem="TyP-Tv-c8i" secondAttribute="bottom" id="4aW-n9-suD"/>
+                                    <constraint firstItem="PZ1-fG-Kop" firstAttribute="top" secondItem="gek-u8-zGQ" secondAttribute="top" id="AIl-l0-fHL"/>
+                                    <constraint firstAttribute="trailing" secondItem="TyP-Tv-c8i" secondAttribute="trailing" id="H5q-4Q-dIb"/>
+                                    <constraint firstItem="TyP-Tv-c8i" firstAttribute="top" secondItem="gek-u8-zGQ" secondAttribute="top" id="KcD-TI-b65"/>
+                                    <constraint firstItem="TyP-Tv-c8i" firstAttribute="leading" secondItem="PZ1-fG-Kop" secondAttribute="trailing" id="bpi-CC-vGB"/>
+                                    <constraint firstItem="PZ1-fG-Kop" firstAttribute="leading" secondItem="gek-u8-zGQ" secondAttribute="leading" constant="20" id="cgy-nP-N7M"/>
+                                    <constraint firstItem="TyP-Tv-c8i" firstAttribute="width" secondItem="gek-u8-zGQ" secondAttribute="width" multiplier="1:3" id="iFZ-U4-ui3"/>
+                                    <constraint firstItem="PZ1-fG-Kop" firstAttribute="centerY" secondItem="gek-u8-zGQ" secondAttribute="centerY" id="t21-x7-yGw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5o-EJ-bdj">
+                                <rect key="frame" x="242" y="397" width="62" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" image="Boton Inicio"/>
+                                <connections>
+                                    <action selector="inicioPulsado:" destination="uHl-UQ-UAQ" eventType="touchUpInside" id="jE4-bi-5TE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Lp-Ku-mpb" firstAttribute="trailing" secondItem="gek-u8-zGQ" secondAttribute="trailing" id="ULK-PI-W25"/>
+                            <constraint firstItem="gek-u8-zGQ" firstAttribute="width" secondItem="wiZ-aU-ZoJ" secondAttribute="width" id="bKM-hC-ZZB"/>
+                            <constraint firstItem="gek-u8-zGQ" firstAttribute="top" secondItem="5Lp-Ku-mpb" secondAttribute="top" constant="10" id="do7-qb-egD"/>
+                            <constraint firstItem="gek-u8-zGQ" firstAttribute="centerX" secondItem="wiZ-aU-ZoJ" secondAttribute="centerX" id="iOZ-Jc-GE5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Lp-Ku-mpb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubq-jl-yFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="26"/>
+        </scene>
+        <!--Listado View Controller-->
+        <scene sceneID="tZY-eA-n7N">
+            <objects>
+                <viewController id="PAR-fP-r86" customClass="ListadoViewController" customModule="Cholor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzK-w7-ucO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo Pantalla Listado Bolas" translatesAutoresizingMaskIntoConstraints="NO" id="ndM-4C-B54">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqz-aQ-VnM">
+                                <rect key="frame" x="12" y="29" width="49" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Boton Volver"/>
+                                <connections>
+                                    <action selector="volverPulsado:" destination="PAR-fP-r86" eventType="touchUpInside" id="S6E-Jh-Dl9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Dp-pA-cbz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9G-1J-WKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="26"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Boton Inicio" width="180" height="195"/>
+        <image name="Boton Jugar Normal" width="672" height="492"/>
+        <image name="Boton Jugar Pulsado" width="672" height="492"/>
+        <image name="Boton Listado Bolas" width="132" height="132"/>
+        <image name="Boton Volver" width="210" height="210"/>
+        <image name="Fondo Pantalla Inicio" width="1125" height="2001"/>
+        <image name="Fondo Pantalla Juego" width="1125" height="2001"/>
+        <image name="Fondo Pantalla Listado Bolas" width="1125" height="2001"/>
+        <namedColor name="Azul Fondo">
+            <color red="0.16078431372549021" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blanco Transparente">
+            <color red="1" green="1" blue="1" alpha="0.31999999284744263" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

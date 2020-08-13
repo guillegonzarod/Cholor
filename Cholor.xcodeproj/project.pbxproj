@@ -3,25 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3B1A7853245217AD00D4D3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7852245217AD00D4D3B0 /* AppDelegate.swift */; };
-		3B1A7855245217AD00D4D3B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7854245217AD00D4D3B0 /* ViewController.swift */; };
+		3B1A7855245217AD00D4D3B0 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7854245217AD00D4D3B0 /* InicioViewController.swift */; };
 		3B1A7858245217AD00D4D3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A7856245217AD00D4D3B0 /* Main.storyboard */; };
 		3B1A785A245217AF00D4D3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A7859245217AF00D4D3B0 /* Assets.xcassets */; };
 		3B1A785D245217AF00D4D3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A785B245217AF00D4D3B0 /* LaunchScreen.storyboard */; };
+		3B825254246482D400D76CC2 /* olivier_demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B825253246482D400D76CC2 /* olivier_demo.ttf */; };
+		3BA80A46248FF52C00BCD017 /* Cholor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3BA80A45248FF52C00BCD017 /* Cholor.m4a */; };
+		3BA80A482491691C00BCD017 /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA80A472491691C00BCD017 /* JuegoViewController.swift */; };
+		3BE104FD24CF39B6005FAF5C /* ListadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE104FC24CF39B6005FAF5C /* ListadoViewController.swift */; };
+		5408FE182C8EC76C894A97CF /* Pods_Cholor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA20F293D0621795C2F09CA1 /* Pods_Cholor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1156018A2930ADDDCA8420E7 /* Pods-Cholor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.debug.xcconfig"; path = "Target Support Files/Pods-Cholor/Pods-Cholor.debug.xcconfig"; sourceTree = "<group>"; };
 		3B1A784F245217AD00D4D3B0 /* Cholor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cholor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1A7852245217AD00D4D3B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B1A7854245217AD00D4D3B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B1A7854245217AD00D4D3B0 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		3B1A7857245217AD00D4D3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B1A7859245217AF00D4D3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1A785C245217AF00D4D3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1A785E245217AF00D4D3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B825253246482D400D76CC2 /* olivier_demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = olivier_demo.ttf; sourceTree = "<group>"; };
+		3BA80A45248FF52C00BCD017 /* Cholor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cholor.m4a; sourceTree = "<group>"; };
+		3BA80A472491691C00BCD017 /* JuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
+		3BE104FC24CF39B6005FAF5C /* ListadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoViewController.swift; sourceTree = "<group>"; };
+		3BE1050024D0A0EA005FAF5C /* Cholor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cholor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CA20F293D0621795C2F09CA1 /* Pods_Cholor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cholor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F541E5AF88B2FBF6D2047488 /* Pods-Cholor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.release.xcconfig"; path = "Target Support Files/Pods-Cholor/Pods-Cholor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5408FE182C8EC76C894A97CF /* Pods_Cholor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15F98A4CF384D118EE161761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA20F293D0621795C2F09CA1 /* Pods_Cholor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B1A7846245217AD00D4D3B0 = {
 			isa = PBXGroup;
 			children = (
 				3B1A7851245217AD00D4D3B0 /* Cholor */,
 				3B1A7850245217AD00D4D3B0 /* Products */,
+				6FAF072231D2C8E4AEE91D5A /* Pods */,
+				15F98A4CF384D118EE161761 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,36 @@
 		3B1A7851245217AD00D4D3B0 /* Cholor */ = {
 			isa = PBXGroup;
 			children = (
+				3BE104FE24D0996A005FAF5C /* Playgrounds */,
 				3B1A7852245217AD00D4D3B0 /* AppDelegate.swift */,
-				3B1A7854245217AD00D4D3B0 /* ViewController.swift */,
+				3B1A7854245217AD00D4D3B0 /* InicioViewController.swift */,
 				3B1A7856245217AD00D4D3B0 /* Main.storyboard */,
+				3BE104FC24CF39B6005FAF5C /* ListadoViewController.swift */,
+				3BA80A472491691C00BCD017 /* JuegoViewController.swift */,
 				3B1A7859245217AF00D4D3B0 /* Assets.xcassets */,
+				3B825253246482D400D76CC2 /* olivier_demo.ttf */,
 				3B1A785B245217AF00D4D3B0 /* LaunchScreen.storyboard */,
+				3BA80A45248FF52C00BCD017 /* Cholor.m4a */,
 				3B1A785E245217AF00D4D3B0 /* Info.plist */,
 			);
 			path = Cholor;
+			sourceTree = "<group>";
+		};
+		3BE104FE24D0996A005FAF5C /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1050024D0A0EA005FAF5C /* Cholor.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		6FAF072231D2C8E4AEE91D5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1156018A2930ADDDCA8420E7 /* Pods-Cholor.debug.xcconfig */,
+				F541E5AF88B2FBF6D2047488 /* Pods-Cholor.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B1A7861245217AF00D4D3B0 /* Build configuration list for PBXNativeTarget "Cholor" */;
 			buildPhases = (
+				25674738E51675C6CD64C947 /* [CP] Check Pods Manifest.lock */,
 				3B1A784B245217AD00D4D3B0 /* Sources */,
 				3B1A784C245217AD00D4D3B0 /* Frameworks */,
 				3B1A784D245217AD00D4D3B0 /* Resources */,
+				1630CC94AC9D6F3FC0667A24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,19 +172,65 @@
 			files = (
 				3B1A785D245217AF00D4D3B0 /* LaunchScreen.storyboard in Resources */,
 				3B1A785A245217AF00D4D3B0 /* Assets.xcassets in Resources */,
+				3BA80A46248FF52C00BCD017 /* Cholor.m4a in Resources */,
+				3B825254246482D400D76CC2 /* olivier_demo.ttf in Resources */,
 				3B1A7858245217AD00D4D3B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1630CC94AC9D6F3FC0667A24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cholor/Pods-Cholor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cholor/Pods-Cholor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cholor/Pods-Cholor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25674738E51675C6CD64C947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cholor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B1A784B245217AD00D4D3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1A7855245217AD00D4D3B0 /* ViewController.swift in Sources */,
+				3B1A7855245217AD00D4D3B0 /* InicioViewController.swift in Sources */,
+				3BE104FD24CF39B6005FAF5C /* ListadoViewController.swift in Sources */,
 				3B1A7853245217AD00D4D3B0 /* AppDelegate.swift in Sources */,
+				3BA80A482491691C00BCD017 /* JuegoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +374,7 @@
 		};
 		3B1A7862245217AF00D4D3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1156018A2930ADDDCA8420E7 /* Pods-Cholor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +393,7 @@
 		};
 		3B1A7863245217AF00D4D3B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F541E5AF88B2FBF6D2047488 /* Pods-Cholor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
